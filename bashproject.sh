@@ -44,6 +44,10 @@ do
 	let "j += 1"
 done
 
+echo "Ukonczono pobieranie obrazkow z $1"
+
 # komunikat jeśli nie da się pobrać zdjęcia - sam sie pojawia
 # usuwa pliki z treścią strony
 rm html_file img_tags src urls
+
+echo "Usunieto pliki tymczasowe"
