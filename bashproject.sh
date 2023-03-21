@@ -8,6 +8,10 @@ if [ $# -eq 1 ]; then
 elif [ $# -eq 0 ]; then
 	echo "Nie podano argumentu strony www"
 	exit
+elif [ $1 == "-h" ]; then
+	echo "Skrypt pobiera obrazki z serwera www"
+	echo "Użycie: ./bashproject.sh [adres strony]"
+	exit
 else
 	echo "Podano za dużo argumentów"
 	exit
