@@ -1,22 +1,25 @@
 #!/bin/bash
-#2022 Anna Giszczak-pt-np
+#2023 Anna Giszczak-pt-np
 #Program pobiera obrazki z serwera www
 
 #sprawdź czy argument $1 istnieje
 if [ $# -eq 1 ]; then
-	echo "Pobieram obrazki z $1"
+	echo "Skrypt wlasciwie uruchomiony"
 elif [ $# -eq 0 ]; then
-	echo "Nie podano argumentu strony www"
-	exit
-elif [ $1 == "-h" ]; then
-	echo "Skrypt pobiera obrazki z serwera www"
-	echo "Użycie: ./bashproject.sh [adres strony]"
+	echo "Nie podano argumentu"
 	exit
 else
 	echo "Podano za dużo argumentów"
 	exit
 fi
 
+#wyswietla pomoc
+if [ $1 == "-h" ]; then
+	echo ".... HELP ...."
+	echo "Skrypt pobiera obrazki z serwera www"
+	echo "Użycie: ./bashproject.sh [adres strony]"
+	exit
+fi
 #jezeli ma // to zamienia na https://
 function change_url {
 	if [[ $1 == *//* ]]; then #gwiazdka * oznacza dowolny ciąg znaków

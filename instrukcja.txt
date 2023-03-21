@@ -4,5 +4,5 @@ Instrukcja:
 np. 
 ./bashproject.sh https://pl.wikipedia.org/wiki/Surtsey
 ./bashproject.sh https://www.wp.pl/
-2. Gdy potrzebujemy informacji w jaki sposób odpalić program wpisujemy:
+2. Gdy potrzebujemy informacji/pomocy w jaki sposób odpalić skrypt wpisujemy:
 ./bashproject.sh -h
